@@ -4,6 +4,8 @@ function comp(/* functions */){
 
   var functions = Array.prototype.slice.call(arguments);
 
+  call.then = then;
+
   return call;
 
   function call(/* [firstValue,] callback */){
@@ -34,5 +36,9 @@ function comp(/* functions */){
     hasFirstValue ? next(0, firstValue) : next(0);
 
   };
+  
+  function then(/* [callbacks] */){
+    Array.prototype.push.apply(functions, arguments);
+  }
 
 };
