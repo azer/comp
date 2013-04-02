@@ -36,9 +36,10 @@ function comp(/* functions */){
     hasFirstValue ? next(0, firstValue) : next(0);
 
   };
-  
+
   function then(/* [callbacks] */){
     Array.prototype.push.apply(functions, arguments);
+    return call;
   }
 
 };

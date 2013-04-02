@@ -1,6 +1,6 @@
 ## comp
 
-Async function composition. Similar to promises (futures).
+Async function composition. Similar to promises.
 
 ```bash
 $ npm install comp
@@ -23,6 +23,12 @@ steps(value1, function(error, value4){
 function step1(value1, callback){}
 function step2(value2, callback){}
 function step3(value3, callback){}
+```
+
+You can add functions to the composition later;
+
+```js
+steps = comp(step1).then(step2).then(step3)
 ```
 
 First step may not get any initial value:

@@ -55,6 +55,23 @@ describe('comp', function(){
 
   });
 
+  it('allows adding new functions later with then method', function(done){
+
+    var steps = comp(step1);
+
+    steps.then(step2).then(step3);
+
+    steps(values[0], function(error, value){
+
+      expect(error).to.not.exist;
+      expect(value).to.equal(values[3]);
+
+      done();
+
+    });
+
+  });
+
 
   beforeEach(function(done){
 
