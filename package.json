@@ -1,6 +1,6 @@
 {
   "name": "comp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Async Function Composition",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "fox": "*"
   },
   "repository": {
-    "url": "git@github.com:azer\/comp.git",
+    "url": "git@github.com:azer/comp.git",
     "type": "git"
   },
   "author": "azer",
