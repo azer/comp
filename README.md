@@ -6,6 +6,8 @@ Async function composition. Similar to promises.
 $ npm install comp
 ```
 
+Need more features? See [andthen](http://github.com/azer/andthen)
+
 ## Usage
 
 ```js
